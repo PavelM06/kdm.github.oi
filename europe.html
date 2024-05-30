@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript" src="loadxml.js"></script>
+<link rel="stylesheet" href="europe.css" type="text/css" />
+<link href="europe2n.xsl"> 
+<link href="europe2p.xsl">
+ <link href="europe2c.xsl">
+ <link href="europe2a.xsl">
+</head>
+<body onLoad="init();">
+  <div id="data">
+  <script type="text/javascript">
+function init() {
+  source = loadXMLDoc("europe2.xml");
+  loadStyle("europe2.xsl", "data");
+  return true;
+}
+</script>
+  </div>
+</body>
+</html>
